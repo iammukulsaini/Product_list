@@ -11,15 +11,9 @@ const GetApiClient = async (url) => {
 
 
     } catch (error) {
-        // console.error('API Error:', error?.response?.response);
-        if (error?.response) {
-            console.error('error?.response.data', error?.response?.data);
-            console.log(error?.response?.data?.data?.msg || 'Something went wrong!');
-            return error?.response?.data;
-        } else {
-            console.log('Network Error or Server is unreachable!');
-            throw new Error('Network Error or Server is unreachable!');
-        }
+        console.log(error);
+        console.log('Something went wrong!!!');
+        throw new Error('Something went wrong!!!');
     }
 };
 
