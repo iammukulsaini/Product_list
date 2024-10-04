@@ -18,7 +18,6 @@ const Homepage = () => {
         }
         try {
             const response = await GET(url, params)
-            console.log(response, "Resss");
             setProductData(response?.products)
             setFilteredProducts(response?.products)
             setLoading(false)
