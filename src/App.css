@@ -1,0 +1,120 @@
+:root {
+  --font-color-1: #151515;
+  --font-color-2: #c0c0c0;
+  --font-color-3: #388e3c;
+  --font-color-4: #fff;
+}
+
+* {
+  margin: 10px;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productlistCard {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 15px 20px;
+  color: var(--font-color-1);
+}
+
+.productImagediv {
+  width: 200px;
+  height: 200px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.productImage {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+
+.productPrice {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--font-color-1);
+}
+
+.productMrp {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  color: var(--font-color-2);
+}
+
+.productDiscount {
+  color: var(--font-color-3);
+}
+
+.productRatings {
+  background-color: var(--font-color-3);
+  color: var(--font-color-4);
+  padding: 5px;
+  border-radius: 8px;
+  height: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.productheading {
+  margin: 0;
+}
+
+.buynowbtn {
+  background-color: var(--font-color-3);
+  color: var(--font-color-4);
+  border-radius: 20px;
+  padding: 4px 8px;
+  border: 1px solid var(--font-color-3);
+  font-weight: 600;
+}
+
+.SearchInput {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 16px;
+}
+
+.SearchInput:focus-visible {
+  outline: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.productDescription {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-height: 1.5;
+  max-height: 3em;
+  text-overflow: ellipsis;
+}
